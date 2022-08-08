@@ -1,3 +1,4 @@
+const { KEY_MAP } = require('./constatns');
 let connection;
 
 const setupInput = function(conn) {
@@ -15,22 +16,9 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-  if (key === 'w') {
-    connection.write('Move: up');
-  }
-  if (key === 'a') {
-    connection.write('Move: left');
-  }
-  if (key === 's') {
-    connection.write('Move: down');
-  }
-  if (key === 'd') {
-    connection.write('Move: right');
-  }
-
-  if (key === 'h') {
-    connection.write('Say: hello!');
+  if (key in KEY_MAP) {
+    connection.write(KEY_MAP[key]);
   }
 };
 
-module.exports =  { setupInput };
+module.exports = { setupInput };
