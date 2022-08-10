@@ -1,4 +1,4 @@
-const { KEY_MAP } = require('./constatns');
+const { KEY_MAP } = require('./constants');
 let connection;
 
 const setupInput = function(conn) {
