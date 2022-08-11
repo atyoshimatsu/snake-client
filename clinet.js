@@ -22,6 +22,7 @@ const connect = function() {
     conn.write(`Name: ${NAME}`);
   });
 
+  // exit process if connection has ended
   conn.on('end', () => {
     process.exit();
   });
