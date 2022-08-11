@@ -22,6 +22,10 @@ const connect = function() {
     conn.write(`Name: ${NAME}`);
   });
 
+  conn.on('end', () => {
+    process.exit();
+  });
+
   return conn;
 };
 
