@@ -23,11 +23,16 @@ node play.js
 ## How to Play
 ### Move
 You can manipulate the snake using 'w', 'a', 's', 'd' keys.
+
 w: move up
+
 a: move left
+
 s: move down
+
 d: move right
 
 ### Say Hello
 You can say hello to other players using 'h' key.
+
 Just say hello!
