@@ -11,6 +11,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+// send key message to the server
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
